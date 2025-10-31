@@ -54,14 +54,6 @@ No changes are needed for the frontend code itself.
     }
     ```
 
-2.  **Update `client/package.json`:**
-
-    Add a `homepage` field to your `client/package.json` file.
-
-    ```json
-    "homepage": "."
-    ```
-
 ## 3. Deploy to Vercel
 
 1.  **Create a New Project:**
@@ -72,11 +64,7 @@ No changes are needed for the frontend code itself.
 
 2.  **Configure Project:**
 
-    *   **Framework Preset:** `Other`
-    *   **Build & Development Settings:**
-        *   **Build Command:** `cd client && npm install && npm run build`
-        *   **Output Directory:** `client/build`
-        *   **Install Command:** `npm install`
+    *   **Root Directory:** Select the root of your project. Vercel will automatically detect the `client` and `server` directories and build them.
     *   **Environment Variables:**
         *   `MONGO_URI`: `<YOUR_MONGO_URI>` (Replace with your actual MongoDB connection string)
         *   `NODE_ENV`: `production`
