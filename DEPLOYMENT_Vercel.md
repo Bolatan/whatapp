@@ -47,8 +47,20 @@ No changes are needed for the frontend code itself.
           "dest": "server/server.js"
         },
         {
+          "src": "/static/(.*)",
+          "dest": "/static/$1"
+        },
+        {
+          "src": "/manifest.json",
+          "dest": "/manifest.json"
+        },
+        {
+          "src": "/favicon.ico",
+          "dest": "/favicon.ico"
+        },
+        {
           "src": "/(.*)",
-          "dest": "client/build/$1"
+          "dest": "/index.html"
         }
       ]
     }
