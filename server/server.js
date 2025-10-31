@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 const usersRouter = require('./routes/users');
-app.use('/users', usersRouter);
+app.use('/api/users', usersRouter);
 
 const uri = process.env.MONGO_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -32,3 +32,5 @@ if (process.env.NODE_ENV === 'production') {
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
+
+module.exports = app;

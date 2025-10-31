@@ -60,7 +60,7 @@ No changes are needed for the frontend code itself.
 
     *   Click on the **Environment** tab.
     *   Add the following environment variables:
-        *   `MONGO_URI`: `mongodb+srv://bolatan_db_user:sYVoFza4cR6f7Vmx@messagingapp.iw2xajx.mongodb.net/?appName=messagingapp`
+        *   `MONGO_URI`: `<YOUR_MONGO_URI>` (Replace with your actual MongoDB connection string)
         *   `NODE_ENV`: `production`
 
 ## 3. Deploy

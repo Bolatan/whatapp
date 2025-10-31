@@ -13,7 +13,7 @@ function Register() {
       email,
     };
 
-    axios.post('/users/register', newUser)
+    axios.post('/api/users/register', newUser)
       .then(res => console.log(res.data))
       .catch(err => console.log(err));
 
